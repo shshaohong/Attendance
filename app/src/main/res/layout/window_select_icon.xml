@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:paddingLeft="50dp"
+    android:paddingRight="50dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:background="#00000000">
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:layout_gravity="center_horizontal"
+        >
+        <Button
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:id="@+id/btn_gallery"
+            android:layout_height="50dp"
+            android:layout_width="200dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/btn_popupwindow_bule"
+            android:text="@string/from_the_photos"
+            android:textSize="16sp"/>
+
+        <Button
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:id="@+id/btn_camera"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_popupwindow_bule"
+            android:layout_marginTop="10dp"
+            android:layout_width="200dp"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/open_the_camera"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_height="50dp"
+            android:layout_width="200dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_popupwindow_gray"
+            android:text="取消"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+</RelativeLayout>
+

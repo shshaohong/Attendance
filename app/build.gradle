@@ -1,0 +1,76 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "com.edu.chenshaohong.attendance"
+        minSdkVersion 19
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.1.1'
+    testCompile 'junit:junit:4.12'
+    //sharesdk
+    compile name: 'SMSSDK-2.1.3', ext: 'aar'
+    compile name: 'SMSSDKGUI-2.1.3', ext: 'aar'
+    //gson转换器
+    compile 'com.squareup.retrofit2:converter-gson:2.0.1'
+    //retrofit
+    compile 'com.squareup.retrofit2:retrofit:2.0.1'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.0.1'
+    //黄油刀
+    compile 'com.jakewharton:butterknife:8.4.0'
+    compile 'com.jakewharton:butterknife-compiler:8.4.0'
+    //okhttp
+    compile 'com.squareup.okhttp3:okhttp:3.6.0'
+    //日志拦截器
+    compile 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+    //recyclerview
+    compile 'com.android.support:recyclerview-v7:25.0.1'
+    //圆形图像头像
+    compile 'com.pkmmte.view:circularimageview:1.1'
+    //    compile 'com.github.bumptech.glide:glide:3.7.0'
+
+    //百度地图的
+    //    compile files('libs/baidumapapi_base_v4_1_1.jar')
+    //    compile files('libs/baidumapapi_cloud_v4_1_1.jar')
+    //    compile files('libs/baidumapapi_map_v4_1_1.jar')
+    //    compile files('libs/baidumapapi_radar_v4_1_1.jar')
+    //    compile files('libs/baidumapapi_search_v4_1_1.jar')
+    //    compile files('libs/baidumapapi_util_v4_1_1.jar')
+    //    compile files('libs/locSDK_6.13.jar')
+    //picasso
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile project(':librarycalendar')
+    //照片剪切：arr
+//    compile 'org.hybridsquad.android.photocropper:library:2.1.0'
+}

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Attendance</string>
+    <string name="phoneNumber">手机号</string>
+    <string name="verificationCode">验证码</string>
+    <string name="getverificationCode">获取验证码</string>
+    <string name="btn_login">登录</string>
+    <string name="attendancelist">考勤机列表</string>
+    <string name="teamlist">团队名单</string>
+    <string name="name">姓名：</string>
+    <string name="department">部门：</string>
+    <string name="phonenumber">手机：</string>
+    <string name="mail">邮箱：</string>
+    <string name="Modify_personal_information">修改个人信息</string>
+    <string name="Modify_information">修改信息</string>
+    <string name="navigation">导航</string>
+    <string name="Attendance_details">出勤详情</string>
+    <string name="This_month_attendance_statistics">本月考勤统计情况</string>
+    <string name="normal_day">正常天数：</string>
+    <string name="late_day">迟到天数：</string>
+    <string name="absenteeism_day">缺勤天数：</string>
+    <string name="from_the_photos">从相册中选择</string>
+    <string name="open_the_camera">打开相机拍照</string>
+</resources>
